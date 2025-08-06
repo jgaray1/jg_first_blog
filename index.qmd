@@ -1,5 +1,5 @@
 ---
-title: "quartoCourseBlog"
+title: "Jocelyn's Stunning Blog"
 listing:
   contents: posts
   sort: "date desc"
@@ -12,4 +12,6 @@ page-layout: full
 title-block-banner: true
 ---
 
-Hello, world. I am here.
+Welcome to my website! This will be dedicated to my very own first R portfolio.
+
+The creation of this website stemmed from a R course I took at Dominican University. Projects related to R and, hopefully, other things will be coming in the future.

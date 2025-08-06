@@ -2,30 +2,23 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me!",
     "section": "",
-    "text": "The content on this page is from about.qmd. Edit that file to change how this page looks.\n“About” pages are special quarto template pages, with multiple options: https://quarto.org/docs/websites/website-about.html.\nTry changing the template type from jolla to one of the other options for a different look and feel."
+    "text": "About Me\nI am an undergraduate student currently attending Dominican University. I’m majoring in Psychology with a minor in Sociology and Spanish Studies. I am from Chicago and have lived there all my life. I have two older brothers and a 13-year-old dachshund mix.\n\n\nInterests"
   },
   {
     "objectID": "posts/my_first_post/index.html",
     "href": "posts/my_first_post/index.html",
-    "title": "My First post",
+    "title": "The Maverick Project",
     "section": "",
-    "text": "This is an example first post. Whatever you write here will appear inside your post.\nIt is possible to write lists:\nAnd make headers"
-  },
-  {
-    "objectID": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "href": "posts/my_first_post/index.html#this-is-a-second-level-heading",
-    "title": "My First post",
-    "section": "This is a second level heading",
-    "text": "This is a second level heading\nYou can include images, and many other kinds of content.\nIf you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:\n\nThe first image in a blog post will also be used on the listings page."
+    "text": "This is my first project post regarding R.\n\n\nIntroduction\nQuestion(s): Does the amount of music spent listening to correlate to lower anxiety levels? Does amount of music spent listening to relate to lower OCD levels? Does the amount of music spent listening to correlate to depression levels?Does the amount of music spent listening to correlate to insomnia?\nPrediction: Higher amount of music spent listening too correlates to lower anxiety levels.Higher amount of music listened too relates to lower OCD levels. Higher amount of music listened to lower levels of depression. Higher amount of music listened to correlates to lower levels of insomnia.\n\n\n\nApproach\n\nData Set\n\n\nTools\n\n\nApproach/predictions\nData collection was administrated by a college undergraduate student, Catherine Rasgaitis, at the University of Washington. Data was collected in various social media platforms, some including posted on Reddit posts and Discord servers. There were over 700 participants.\n\n\n\n\nResults\n\n\n\nDiscussion"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "quartoCourseBlog",
+    "title": "Jocelyn’s Stunning Blog",
     "section": "",
-    "text": "Hello, world. I am here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy First post\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\n\n\n\n\n\n\n\nExample assignment\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nMatt Crump\n\n\n\n\n\nNo matching items"
+    "text": "Welcome to my website! This will be dedicated to my very own first R portfolio.\nThe creation of this website stemmed from a R course I took at Dominican University. Projects related to R and, hopefully, other things will be coming in the future.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Maverick Project\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 6, 2025\n\n\nJocelyn Garay\n\n\n\n\n\n\n\n\n\n\n\n\nAnother assignment\n\n\n\ngoals\n\ngeneral\n\n\n\n\n\n\n\n\n\nAug 6, 2025\n\n\nJocelyn Garay\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "readme.html",
@@ -110,19 +103,5 @@
     "title": "Using this quarto course blog template",
     "section": "",
     "text": "See this growing list of quarto resources for much, much more:\nhttps://github.com/mcanouil/awesome-quarto"
-  },
-  {
-    "objectID": "posts/Example_assignment/index.html",
-    "href": "posts/Example_assignment/index.html",
-    "title": "Example assignment",
-    "section": "",
-    "text": "This assignment engages you in the process of introspection. Your task is to use introspection to evaluate and describe your own mental imagery abilities. Attempt to answer the following kinds of questions. What is your mental imagery like? Do you have mental imagery for different kinds of senses? Is your mental imagery vivid and life-like or very different from normal perception? How would you describe your mental imagery?\nYou should write a minimum of 250 words, but feel free to write more. Submit your document on blackboard by the due date."
-  },
-  {
-    "objectID": "posts/Example_assignment/index.html#my-mental-imagery",
-    "href": "posts/Example_assignment/index.html#my-mental-imagery",
-    "title": "Example assignment",
-    "section": "My mental imagery",
-    "text": "My mental imagery\nMy mental imagery is like…"
   }
 ]

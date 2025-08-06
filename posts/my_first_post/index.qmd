@@ -1,26 +1,36 @@
 ---
-title: "My First post"
-author: "Matt Crump"
-date: "2022-10-21"
+title: "The Maverick Project"
+author: "Jocelyn Garay"
+date: "2025-08-06"
 categories: [goals,general]
 ---
 
-This is an example first post. Whatever you write here will appear inside your post.
+This is my first project post regarding R.
 
-It is possible to write lists:
+------------------------------------------------------------------------
 
-1.  One
-2.  Two
-3.  Three
+# Introduction
 
-And make headers
+Question(s): Does the amount of music spent listening to correlate to lower anxiety levels? Does amount of music spent listening to relate to lower OCD levels? Does the amount of music spent listening to correlate to depression levels?Does the amount of music spent listening to correlate to insomnia?
 
-## This is a second level heading
+Prediction: Higher amount of music spent listening too correlates to lower anxiety levels.Higher amount of music listened too relates to lower OCD levels. Higher amount of music listened to lower levels of depression. Higher amount of music listened to correlates to lower levels of insomnia.
 
-You can include images, and many other kinds of content.
+------------------------------------------------------------------------
 
-If you are using the visual editor in Rstudio you can drag images onto the editor to insert them into the document. Otherwise, you need to place the image inside of the folder for this post, and then you can insert it to your post directly, like this:
+# Approach
 
-![](thumbnail.jpg)
+### Data Set
 
-The first image in a blog post will also be used on the listings page.
+### **Tools**
+
+### **Approach/predictions**
+
+Data collection was administrated by a college undergraduate student, Catherine Rasgaitis, at the University of Washington. Data was collected in various social media platforms, some including posted on Reddit posts and Discord servers. There were over 700 participants.
+
+------------------------------------------------------------------------
+
+# Results
+
+------------------------------------------------------------------------
+
+# Discussion
