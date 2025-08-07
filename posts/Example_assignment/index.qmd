@@ -1,6 +1,0 @@
----
-title: "Another assignment"
-author: "Jocelyn Garay"
-date: "2025-08-06"
-categories: [goals,general]
----

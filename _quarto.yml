@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Jocelyn's R Portfolio"
+  title: "Jocelyn's Portfolio"
   navbar:
     right:
       - about.qmd
