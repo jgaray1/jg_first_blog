@@ -1,43 +1,79 @@
 ---
-title: "The R Project"
+title: "My R Project"
 author: "Jocelyn Garay"
-date: "2025-08-06"
+date: "2025-08-08"
 categories: [projects]
 ---
-
-This is my first project post using R.
 
 ------------------------------------------------------------------------
 
 # Introduction
 
-This study will be focused on the interaction between hours of music spent listening and its impact on multiple mental health categories.
+This project is focused on the interaction between hours of music spent listening to per day and its impact on multiple mental health categories.
 
-This project will examine the relationship between the amount of time spent listening to music and its impact on various mental health factors, including anxiety, obsessive-compulsive disorder (OCD), depression, and insomnia. Specifically, this study aims to determine whether increased music listening is associated with lower levels of anxiety, OCD symptoms, depressive symptoms, and insomnia.
+This project explores the relationship between the amount of time people spend listening to music and various aspects of mental health, including anxiety, depression, obsessive-compulsive disorder (OCD), and insomnia. Understanding these relationships is important because music is widely accessible, non-invasive, and could serve as a simple tool for improving personal well-being. Personally, I find that music can be calming, motivating, or emotionally supportive, which inspires my interest in whether these effects are measurable across different mental health categories.
 
-We hypothesize that higher duration of music listening will correlate with reduced levels of anxiety and OCD. Additionally, we predict that greater time spent listening to music will be associated with lower levels of depression and fewer symptoms of insomnia.
+[The following research questions will be addressed:]{.underline}
+
+-   *Does the amount of time spent listening to music relate to anxiety levels?*
+
+-   *Does the amount of time spent listening to music relate to depression levels?*
+
+-   *Does the amount of time spent listening to music relate to insomnia levels?*
+
+-   *Does the amount of time spent listening to music relate to OCD symptoms?*
+
+**Predictions:**
+
+> **Anxiety:** There will be a moderate negative relationship, where higher hours of music listening is linked to lower anxiety levels.
+>
+> **Depression**: There will be a moderate negative relationship where more listening time is associated with fewer depressive symptoms.
+>
+> **OCD:** There will be a moderate negative relationship with greater music listening is linked to slight fewer OCD symptoms.
+>
+> **Insomnia:** There will be a subtle negative relationship where greater amount of music listening is linked to insomnia levels.
 
 ------------------------------------------------------------------------
 
 # Approach
 
-### Data Set
+### Data Set Overview:
 
-Data collection was administrated by a college undergraduate student, Catherine Rasgaitis, at the University of Washington. Data was collected in various social media platforms, some including posted on Reddit posts and Discord servers. There were over 700 participants that responded to the survey.
+Data was collected through Kaggle and uploaded by Catherine Rasgaitis via Google Forms. The data collection period ran from August 27, 2022 - November, 2022. There was an overall 736 number of respondents for the survey. For population, it was open to all ages and locations worldwide.
+
+Responses were gathered through an online survey posted in Reddit forums, Discord servers and other unnamed social media platforms. Physical promotion, such as posters and business cards, were also used in public spaces such as libraries and parks. The survey was designed to be brief to encourage completion, with more complex questions (e.g., beats per minute) marked as optional.
+
+[Key Variables:]{.underline}
+
+-   hours.per.day - Number of hours the respondent listens to music per day
+
+-   Music.effects - Whether music improve, worsened, or had no affect on the respondent's mental health conditions
+
+-   Anxiety - Self-reported levels of anxiety on a scale of 0-10.
+
+-   Depression - Self-reported levels of anxiety on a scale of 0-10.
+
+-   OCD - Self-reported levels of OCD on a scale of 0-10.
+
+-   Insomnia - Self-reported levels of insomnia on a scale of 0-10.
+
+    Notes: This set of data contains self-reported levels of mental health conditions, which may contain subjective bias.
 
 ### **Tools**
 
-For this project, we used R and RStudio through Posit Cloud. Other website hosting platforms were used, such as GitHub.
+For this project, we used R and Quarto. Other website hosting platforms were used, such as GitHub.
 
 ### **Approach/Predictions**
 
-I will examine the correlation between hours of listening to music and mental health conditions between anxiety, depression, insomnia, and OCD.
+I will examine the correlation between self-reported hours-per-day scores and self-reported anxiety scores. The relationship between self-reported hours-per-day scores and self-reported depression scores will also be investigated. I will also examine the relation between self-reported hours-per-day scores and self-reported OCD scores. I will also examine the correlation between self-reported hours-per-day scores and self-reported insomnia scores.
 
 ------------------------------------------------------------------------
 
 # Results
 
-#### Question 1: Does the amount of time spend listening to music impact anxiety levels?
+#### Question 1: Does the amount of time spent listening to music relate to anxiety levels?
+
+Here's what was found:
 
 ```{r}
 #| message: false
@@ -49,7 +85,7 @@ mydata <- read.csv("../../Music_x_Mental_Health_Data_Results.csv")
 ggplot(data = mydata, 
        mapping = aes(x= Hours.per.day, y = Anxiety, 
   color = Music.effects, shape = Music.effects)) + 
-  geom_point(alpha = 0.8) + geom_smooth(se= FALSE) + 
+  geom_point(alpha = 0.8, position = "jitter") + geom_smooth(se= FALSE, method = "lm") + 
   labs(
   title = "Relationship between Hours of Music Listening and Anxiety",
   x = "Hours Spent Listening to Music (0-25)",
@@ -57,7 +93,11 @@ ggplot(data = mydata,
 ) + theme_classic()
 ```
 
-#### Question 2: Does the amount of time spend listening to music impact depression levels?
+Conclusion: There was no clear relationship found between hours of listening to music and levels of anxiety.
+
+#### Question 2: Does the amount of time spent listening to music relate to depression levels?
+
+Here's what was found:
 
 ```{r}
 #| message: false
@@ -69,15 +109,17 @@ mydata <- read.csv("../../Music_x_Mental_Health_Data_Results.csv")
 ggplot(data = mydata, 
        mapping = aes(x= Hours.per.day, y = Depression, 
   color = Music.effects, shape = Music.effects)) + 
-  geom_point(alpha = 0.8) + geom_smooth(se= FALSE) + 
+  geom_point(alpha = 0.8, position = "jitter") + geom_smooth(se= FALSE, method = "lm") + 
   labs(
-  title = "Relationship between Hours of Music Listening and Depresion",
+  title = "Relationship between Hours of Music Listening and Depression",
   x = "Hours Spent Listening to Music (0-25)",
   y = "Self-Reported Depression (0-10)"
 ) + theme_classic()
 ```
 
-#### Question 3: Does the amount of time spend listening to music impact insomnia levels?
+Conclusion: There was no distinct relationship found between higher amount of music listening linked to higher levels of anxiety.
+
+#### Question 3: Does the amount of time spent listening to music relate to insomnia levels?
 
 Here's what was found:
 
@@ -91,7 +133,7 @@ mydata <- read.csv("../../Music_x_Mental_Health_Data_Results.csv")
 ggplot(data = mydata, 
        mapping = aes(x= Hours.per.day, y = Insomnia, 
   color = Music.effects, shape = Music.effects)) + 
-  geom_point(alpha = 0.8) + geom_smooth(se= FALSE) + 
+  geom_point(alpha = 0.8, position = "jitter") + geom_smooth(se= FALSE, method = "lm") +
   labs(
   title = "Relationship Between Hours of Music Listening and Insomnia",
   x = "Hours Spent Listening to Music (0-25)",
@@ -99,7 +141,11 @@ ggplot(data = mydata,
 ) + theme_classic()
 ```
 
-#### Question 4: Does the amount of time spend listening to music impact OCD levels?
+Conclusion: There's a negative correlation found between high amount of music listening and lower levels of insomnia.
+
+#### Question 4: Does the amount of time spend listening to music relate to OCD levels?
+
+Here's what was found:
 
 ```{r}
 #| message: false
@@ -111,7 +157,7 @@ mydata <- read.csv("../../Music_x_Mental_Health_Data_Results.csv")
 ggplot(data = mydata, 
        mapping = aes(x= Hours.per.day, y = OCD, 
   color = Music.effects, shape = Music.effects)) + 
-  geom_point(alpha = 0.8) + geom_smooth(se= FALSE) + 
+  geom_point(alpha = 0.8, position = "jitter") + geom_smooth(se= FALSE, method = "lm") + 
   labs(
   title = "Relationship between Hours of Music Listening and OCD",
   x = "Hours Spent Listening to Music (0-25)",
@@ -119,6 +165,10 @@ ggplot(data = mydata,
 ) + theme_classic(base_size = 12)
 ```
 
+Conclusion: There's a subtle positive correlation found between higher amount of music listening and worsened levels of OCD levels.
+
 ------------------------------------------------------------------------
 
 # Discussion
+
+For only one out of the four hypothesis, my predictions were supported. For self-reported levels of anxiety, depression, and OCD, there was no clear correlation with regards to hours of music listening to per day. However, interestingly enough, there was a clear correlation that could be observed between high hours of music listening and insomnia. Despite these results, I still do not have a change in my beliefs for my hypothesis and further would've liked to explore this through more data or even by looking into age groups or genres participants listened to.

@@ -9,7 +9,7 @@ about:
       href: https://twitter.com/jocelyn72012
     - icon: linkedin
       text: LinkedIn
-      href: linkedin.com/in/garay-jocelyn 
+      href: www.linkedin.com/in/garay-jocelyn 
     - icon: github
       text: Github
       href: https://github.com/jgaray1

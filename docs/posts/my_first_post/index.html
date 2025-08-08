@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jocelyn Garay">
-<meta name="dcterms.date" content="2025-08-06">
+<meta name="dcterms.date" content="2025-08-08">
 
-<title>The R Project – Jocelyn’s Portfolio</title>
+<title>My R Project – Jocelyn’s Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,10 +73,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-748b535e376f14d4692bf2b2e5fd6380.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1a0aca73123c4d5900b8a149902aa1a0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-38fa85a8fa22643a022874af566011dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,7 +151,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">The R Project</h1>
+      <h1 class="title">My R Project</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">projects</div>
               </div>
@@ -171,7 +171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 6, 2025</p>
+        <p class="date">August 8, 2025</p>
       </div>
     </div>
     
@@ -190,35 +190,59 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>This is my first project post using R.</p>
 <hr>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>This study will be focused on the interaction between hours of music spent listening and its impact on multiple mental health categories.</p>
-<p>This project will examine the relationship between the amount of time spent listening to music and its impact on various mental health factors, including anxiety, obsessive-compulsive disorder (OCD), depression, and insomnia. Specifically, this study aims to determine whether increased music listening is associated with lower levels of anxiety, OCD symptoms, depressive symptoms, and insomnia.</p>
-<p>We hypothesize that higher duration of music listening will correlate with reduced levels of anxiety and OCD. Additionally, we predict that greater time spent listening to music will be associated with lower levels of depression and fewer symptoms of insomnia.</p>
+<p>This project is focused on the interaction between hours of music spent listening to per day and its impact on multiple mental health categories.</p>
+<p>This project explores the relationship between the amount of time people spend listening to music and various aspects of mental health, including anxiety, depression, obsessive-compulsive disorder (OCD), and insomnia. Understanding these relationships is important because music is widely accessible, non-invasive, and could serve as a simple tool for improving personal well-being. Personally, I find that music can be calming, motivating, or emotionally supportive, which inspires my interest in whether these effects are measurable across different mental health categories.</p>
+<p><u>The following research questions will be addressed:</u></p>
+<ul>
+<li><p><em>Does the amount of time spent listening to music relate to anxiety levels?</em></p></li>
+<li><p><em>Does the amount of time spent listening to music relate to depression levels?</em></p></li>
+<li><p><em>Does the amount of time spent listening to music relate to insomnia levels?</em></p></li>
+<li><p><em>Does the amount of time spent listening to music relate to OCD symptoms?</em></p></li>
+</ul>
+<p><strong>Predictions:</strong></p>
+<blockquote class="blockquote">
+<p><strong>Anxiety:</strong> There will be a moderate negative relationship, where higher hours of music listening is linked to lower anxiety levels.</p>
+<p><strong>Depression</strong>: There will be a moderate negative relationship where more listening time is associated with fewer depressive symptoms.</p>
+<p><strong>OCD:</strong> There will be a moderate negative relationship with greater music listening is linked to slight fewer OCD symptoms.</p>
+<p><strong>Insomnia:</strong> There will be a subtle negative relationship where greater amount of music listening is linked to insomnia levels.</p>
+</blockquote>
 <hr>
 </section>
 <section id="approach" class="level1">
 <h1>Approach</h1>
-<section id="data-set" class="level3">
-<h3 class="anchored" data-anchor-id="data-set">Data Set</h3>
-<p>Data collection was administrated by a college undergraduate student, Catherine Rasgaitis, at the University of Washington. Data was collected in various social media platforms, some including posted on Reddit posts and Discord servers. There were over 700 participants that responded to the survey.</p>
+<section id="data-set-overview" class="level3">
+<h3 class="anchored" data-anchor-id="data-set-overview">Data Set Overview:</h3>
+<p>Data was collected through Kaggle and uploaded by Catherine Rasgaitis via Google Forms. The data collection period ran from August 27, 2022 - November, 2022. There was an overall 736 number of respondents for the survey. For population, it was open to all ages and locations worldwide.</p>
+<p>Responses were gathered through an online survey posted in Reddit forums, Discord servers and other unnamed social media platforms. Physical promotion, such as posters and business cards, were also used in public spaces such as libraries and parks. The survey was designed to be brief to encourage completion, with more complex questions (e.g., beats per minute) marked as optional.</p>
+<p><u>Key Variables:</u></p>
+<ul>
+<li><p>hours.per.day - Number of hours the respondent listens to music per day</p></li>
+<li><p>Music.effects - Whether music improve, worsened, or had no affect on the respondent’s mental health conditions</p></li>
+<li><p>Anxiety - Self-reported levels of anxiety on a scale of 0-10.</p></li>
+<li><p>Depression - Self-reported levels of anxiety on a scale of 0-10.</p></li>
+<li><p>OCD - Self-reported levels of OCD on a scale of 0-10.</p></li>
+<li><p>Insomnia - Self-reported levels of insomnia on a scale of 0-10.</p>
+<p>Notes: This set of data contains self-reported levels of mental health conditions, which may contain subjective bias.</p></li>
+</ul>
 </section>
 <section id="tools" class="level3">
 <h3 class="anchored" data-anchor-id="tools"><strong>Tools</strong></h3>
-<p>For this project, we used R and RStudio through Posit Cloud. Other website hosting platforms were used, such as GitHub.</p>
+<p>For this project, we used R and Quarto. Other website hosting platforms were used, such as GitHub.</p>
 </section>
 <section id="approachpredictions" class="level3">
 <h3 class="anchored" data-anchor-id="approachpredictions"><strong>Approach/Predictions</strong></h3>
-<p>I will examine the correlation between hours of listening to music and mental health conditions between anxiety, depression, insomnia, and OCD.</p>
+<p>I will examine the correlation between self-reported hours-per-day scores and self-reported anxiety scores. The relationship between self-reported hours-per-day scores and self-reported depression scores will also be investigated. I will also examine the relation between self-reported hours-per-day scores and self-reported OCD scores. I will also examine the correlation between self-reported hours-per-day scores and self-reported insomnia scores.</p>
 <hr>
 </section>
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
-<section id="question-1-does-the-amount-of-time-spend-listening-to-music-impact-anxiety-levels" class="level4">
-<h4 class="anchored" data-anchor-id="question-1-does-the-amount-of-time-spend-listening-to-music-impact-anxiety-levels">Question 1: Does the amount of time spend listening to music impact anxiety levels?</h4>
+<section id="question-1-does-the-amount-of-time-spent-listening-to-music-relate-to-anxiety-levels" class="level4">
+<h4 class="anchored" data-anchor-id="question-1-does-the-amount-of-time-spent-listening-to-music-relate-to-anxiety-levels">Question 1: Does the amount of time spent listening to music relate to anxiety levels?</h4>
+<p>Here’s what was found:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -227,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mydata, </span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span> Hours.per.day, <span class="at">y =</span> Anxiety, </span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> Music.effects, <span class="at">shape =</span> Music.effects)) <span class="sc">+</span> </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se=</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">position =</span> <span class="st">"jitter"</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se=</span> <span class="cn">FALSE</span>, <span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span> </span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Relationship between Hours of Music Listening and Anxiety"</span>,</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="st">"Hours Spent Listening to Music (0-25)"</span>,</span>
@@ -241,9 +265,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Conclusion: There was no clear relationship found between hours of listening to music and levels of anxiety.</p>
 </section>
-<section id="question-2-does-the-amount-of-time-spend-listening-to-music-impact-depression-levels" class="level4">
-<h4 class="anchored" data-anchor-id="question-2-does-the-amount-of-time-spend-listening-to-music-impact-depression-levels">Question 2: Does the amount of time spend listening to music impact depression levels?</h4>
+<section id="question-2-does-the-amount-of-time-spent-listening-to-music-relate-to-depression-levels" class="level4">
+<h4 class="anchored" data-anchor-id="question-2-does-the-amount-of-time-spent-listening-to-music-relate-to-depression-levels">Question 2: Does the amount of time spent listening to music relate to depression levels?</h4>
+<p>Here’s what was found:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -252,9 +278,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mydata, </span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span> Hours.per.day, <span class="at">y =</span> Depression, </span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> Music.effects, <span class="at">shape =</span> Music.effects)) <span class="sc">+</span> </span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se=</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">position =</span> <span class="st">"jitter"</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se=</span> <span class="cn">FALSE</span>, <span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span> </span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Relationship between Hours of Music Listening and Depresion"</span>,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Relationship between Hours of Music Listening and Depression"</span>,</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="st">"Hours Spent Listening to Music (0-25)"</span>,</span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="st">"Self-Reported Depression (0-10)"</span></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>) <span class="sc">+</span> <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -266,9 +292,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Conclusion: There was no distinct relationship found between higher amount of music listening linked to higher levels of anxiety.</p>
 </section>
-<section id="question-3-does-the-amount-of-time-spend-listening-to-music-impact-insomnia-levels" class="level4">
-<h4 class="anchored" data-anchor-id="question-3-does-the-amount-of-time-spend-listening-to-music-impact-insomnia-levels">Question 3: Does the amount of time spend listening to music impact insomnia levels?</h4>
+<section id="question-3-does-the-amount-of-time-spent-listening-to-music-relate-to-insomnia-levels" class="level4">
+<h4 class="anchored" data-anchor-id="question-3-does-the-amount-of-time-spent-listening-to-music-relate-to-insomnia-levels">Question 3: Does the amount of time spent listening to music relate to insomnia levels?</h4>
 <p>Here’s what was found:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
@@ -278,7 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mydata, </span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span> Hours.per.day, <span class="at">y =</span> Insomnia, </span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> Music.effects, <span class="at">shape =</span> Music.effects)) <span class="sc">+</span> </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se=</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">position =</span> <span class="st">"jitter"</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se=</span> <span class="cn">FALSE</span>, <span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Relationship Between Hours of Music Listening and Insomnia"</span>,</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="st">"Hours Spent Listening to Music (0-25)"</span>,</span>
@@ -292,9 +319,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Conclusion: There’s a negative correlation found between high amount of music listening and lower levels of insomnia.</p>
 </section>
-<section id="question-4-does-the-amount-of-time-spend-listening-to-music-impact-ocd-levels" class="level4">
-<h4 class="anchored" data-anchor-id="question-4-does-the-amount-of-time-spend-listening-to-music-impact-ocd-levels">Question 4: Does the amount of time spend listening to music impact OCD levels?</h4>
+<section id="question-4-does-the-amount-of-time-spend-listening-to-music-relate-to-ocd-levels" class="level4">
+<h4 class="anchored" data-anchor-id="question-4-does-the-amount-of-time-spend-listening-to-music-relate-to-ocd-levels">Question 4: Does the amount of time spend listening to music relate to OCD levels?</h4>
+<p>Here’s what was found:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -303,7 +332,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mydata, </span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x=</span> Hours.per.day, <span class="at">y =</span> OCD, </span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> Music.effects, <span class="at">shape =</span> Music.effects)) <span class="sc">+</span> </span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se=</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>, <span class="at">position =</span> <span class="st">"jitter"</span>) <span class="sc">+</span> <span class="fu">geom_smooth</span>(<span class="at">se=</span> <span class="cn">FALSE</span>, <span class="at">method =</span> <span class="st">"lm"</span>) <span class="sc">+</span> </span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">title =</span> <span class="st">"Relationship between Hours of Music Listening and OCD"</span>,</span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="st">"Hours Spent Listening to Music (0-25)"</span>,</span>
@@ -317,11 +346,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Conclusion: There’s a subtle positive correlation found between higher amount of music listening and worsened levels of OCD levels.</p>
 <hr>
 </section>
 </section>
 <section id="discussion" class="level1">
 <h1>Discussion</h1>
+<p>For only one out of the four hypothesis, my predictions were supported. For self-reported levels of anxiety, depression, and OCD, there was no clear correlation with regards to hours of music listening to per day. However, interestingly enough, there was a clear correlation that could be observed between high hours of music listening and insomnia. Despite these results, I still do not have a change in my beliefs for my hypothesis and further would’ve liked to explore this through more data or even by looking into age groups or genres participants listened to.</p>
 
 
 </section>
